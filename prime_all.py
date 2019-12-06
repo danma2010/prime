@@ -11,8 +11,7 @@
 import re
 import time
 
-print ('Hello, world!')
-
+print ('Hello, world! ')
 
 searchWin = 100
 maxPrime = 2
@@ -36,10 +35,10 @@ for k in primeList:
         numTest = i
 
         if (maxPrime < i):
-            lapTime = time.process_time_ns() - ittrTime
-            ittrTime = time.process_time_ns()
+            lapTime = time.process_time_ns() - startTime
+            #ittrTime = time.process_time_ns()
             maxPrime = i
-            print("prime: " + str(maxPrime) + "  in time: " + str(lapTime) + " mSec  " + "prime percent:" + str(100*primeList.__len__()/maxNum) + "%")
+            print("prime: " + str(maxPrime) + "  in time: " + str(lapTime/1000000) + " mSec  " + "prime percent:" + str(100*primeList.__len__()/maxNum) + "%")
             # add numbers at the end of the list
 
         for j in primeList:
