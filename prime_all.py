@@ -13,7 +13,7 @@ import time
 
 print ('Hello, world! ')
 
-searchWin = 100
+searchWin = 10000
 maxPrime = 2
 
 primeList = [maxPrime]
